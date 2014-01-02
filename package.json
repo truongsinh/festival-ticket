@@ -27,7 +27,9 @@
   "dependencies": {
     "edit-google-spreadsheet": "~0.2.2",
     "q": "~0.9.7",
-    "express": "~3.4.7"
+    "express": "~3.4.7",
+    "nodemailer": "~0.6.0",
+    "dot": "~1.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -55,4 +57,5 @@
     "jshint-stylish": "~0.1.3",
     "load-grunt-tasks": "~0.2.0",
     "time-grunt": "~0.2.1"
+  }
 }

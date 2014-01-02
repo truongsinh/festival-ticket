@@ -3,7 +3,7 @@
  */
 (function () {
   'use strict';
-  var sample = require('./settings.sample');
+  var sample = require('./settings.sample.js');
   var settings = require('./settings');
 
   var sampleKeyList = Object.keys(sample);

@@ -1,0 +1,130 @@
+<div ng-include="'views/_header.html'"></div>
+
+<form
+  class="ticket"
+  ng-submit="submit()"
+  >
+  <div>
+    <span>Bạn sẽ lấy vé tại</span>
+
+    <div>
+      <label><input type="radio" ng-model="ticket.place" value="LHP">Văn phòng Đoàn - Lê Hồng Phong</label>
+      <label><input type="radio" ng-model="ticket.place" value="TDN">Văn phòng Đoàn - Trần Đại Nghĩa</label>
+      <label><input type="radio" ng-model="ticket.place" value="NTH">Văn phòng Đoàn - Nguyễn Thượng Hiền</label>
+    </div>
+  </div>
+
+  <label>
+    <span>Số lượng vé màu ĐỎ</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.red"
+        >
+    </div>
+  </label>
+  <label>
+    <span>Số lượng vé màu XANH DƯƠNG</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.blue">
+    </div>
+  </label>
+  <label>
+    <span>Số lượng vé màu XANH LÁ</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.green">
+    </div>
+  </label>
+  <label>
+    <span>Số lượng vé màu VÀNG</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.yellow">
+    </div>
+  </label>
+  <label>
+    <span>Số lượng vé màu HỒNG</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.pink">
+    </div>
+  </label>
+  <label>
+    <span>Số lượng vé màu bất kỳ</span>
+
+    <div>
+      <input
+        type="number"
+        required
+        ng-model="ticket.any">
+    </div>
+  </label>
+  <label>
+    <span>Tên của bạn</span>
+
+    <div>
+      <input
+        type="text"
+        required
+        ng-model="ticket.name">
+    </div>
+  </label>
+  <label>
+    <span>Số điện thoại liên lạc</span>
+
+    <div>
+      <input
+        type="text"
+        required
+        ng-model="ticket.phone">
+    </div>
+  </label>
+  <label>
+    <span>Địa chỉ email</span>
+
+    <div>
+      <input
+        type="email"
+        required
+        ng-model="ticket.email">
+    </div>
+  </label>
+  <div>
+    <span>Tổng số vé</span>
+
+    <div>{{ ticket.red + ticket.blue + ticket.green + ticket.yellow + ticket.pink + ticket.any }}
+    </div>
+  </div>
+
+  <div>
+    <span>Thành tiền</span>
+
+    <div>{{ (ticket.red + ticket.blue + ticket.green + ticket.yellow + ticket.pink + ticket.any) * 50000 | currency2 }}
+    </div>
+  </div>
+
+
+  <div>
+    <div>
+      <button type="submit" class="primary" ng-disabled="submitted">Đặt vé</button>
+    </div>
+  </div>
+</form>
+
+<div ng-include="'views/_footer.html'"></div>

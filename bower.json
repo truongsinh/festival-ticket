@@ -5,7 +5,9 @@
   "dependencies": {
     "angular": "~1.2.x",
     "angular-route": "~1.2.x",
-    "sass-bootstrap": "~2.x"
+    "sass-bootstrap": "~2.x",
+    "font-awesome": "~4.0.3",
+    "angular-i18n": "~1.2.6"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.x",
