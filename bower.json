@@ -1,0 +1,14 @@
+{
+  "name": "festival-ticket",
+  "version": "0.0.0",
+  "appPath": "frontend",
+  "dependencies": {
+    "angular": "~1.2.x",
+    "angular-route": "~1.2.x",
+    "sass-bootstrap": "~2.x"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.x",
+    "angular-scenario": "~1.2.x"
+  }
+}
