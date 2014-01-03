@@ -5,3 +5,4 @@ dist
 frontend/bower_components
 settings.js
 log.*
+pid*
